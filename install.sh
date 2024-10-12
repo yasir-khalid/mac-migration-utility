@@ -49,7 +49,7 @@ printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' '-'
 echo "Setting up mac defaults of your choice"
 
 echo "- Finder: show hidden files by default"
-defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.Finder AppleShowAllFiles true
 
 echo "- Screencapture: Save screenshots to the desktop"
 mkdir -p "$HOME/screenshots"
